@@ -28,7 +28,7 @@ export default {
     ogDescription: app.description,
     ogHost: app.host,
     ogImage: {
-      path: 'card.png'
+      path: 'card.jpg'
     },
     ogUrl: app.url,
     twitterCard: 'summary_large_image',
