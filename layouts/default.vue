@@ -1,6 +1,7 @@
 <template>
   <div class="root">
-    <app-navigation :color="isTop ? 'white' : 'black'" />
+    <app-navigation v-if="!isSmartPhone" :color="isTop ? 'white' : 'black'" />
+    <app-navigation-sp v-if="!isSmartPhone" />
     <div class="pageOuter">
       <nuxt />
     </div>
@@ -10,15 +11,20 @@
 
 <script>
 import AppNavigation from '../containers/AppNavigation'
+import AppNavigationSp from '../containers/AppNavigationSp'
 import AppFooter from '../containers/AppFooter'
 export default {
   components: {
     AppNavigation,
+    AppNavigationSp,
     AppFooter
   },
   computed: {
     isTop () {
       return this.$route.path === '/'
+    },
+    isSmartPhone () {
+      return this.$store.getters['app/isSmartPhones']
     }
   }
 }

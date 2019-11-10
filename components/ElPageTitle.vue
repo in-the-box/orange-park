@@ -26,15 +26,25 @@ export default {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 64px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 40px;
+  }
   h1 {
     font-size: 64px;
     font-weight: bold;
     line-height: .8;
     margin-bottom: 16px;
+    @media screen and (max-width: 768px) {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
   }
   p {
     font-weight: bold;
     font-size: 24px;
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+    }
   }
 }
 </style>

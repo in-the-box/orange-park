@@ -54,9 +54,6 @@ export default {
   &-logo {
     margin-right: 24px;
     margin-top: -8px;
-    @media screen and (max-width: 768px) {
-      display: none;
-    }
   }
   &-item {
     font-weight: bold;

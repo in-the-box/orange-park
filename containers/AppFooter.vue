@@ -31,8 +31,13 @@
             </nuxt-link>
           </div>
           <div class="footer-navigation-item">
-            <nuxt-link to="/pricing">
-              利用料金
+            <nuxt-link to="/service">
+              サービス
+            </nuxt-link>
+          </div>
+          <div class="footer-navigation-item">
+            <nuxt-link to="/facility">
+              施設紹介
             </nuxt-link>
           </div>
           <div class="footer-navigation-item">
@@ -124,19 +129,41 @@
 .footer {
   padding: 64px 0 32px;
   background-color: #238B45;
+  @media screen and (max-width: 768px) {
+    padding: 0 0 32px;
+  }
   &-navigation {
     display: flex;
     justify-content: center;
     margin-bottom: 56px;
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
     &-item {
       color: #fff;
       font-weight: bold;
       margin-right: 16px;
       display: flex;
       align-items: center;
+      @media screen and (max-width: 768px) {
+        width: 50%;
+        margin-right: 0;
+      }
       a {
         display: inline-block;
         margin-right: 16px;
+        @media screen and (max-width: 768px) {
+          text-align: center;
+          margin-right: 0;
+          display: block;
+          width: 100%;
+          padding: 16px 8px;
+          background-color: #238b45;
+          border: solid #fff 1px;
+          border-top: none;
+          border-left: none;
+        }
         &:hover {
           text-decoration: underline
         }
@@ -148,6 +175,9 @@
         width: 2px;
         height: 100%;
         background-color: #fff;
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
       }
     }
   }

@@ -54,6 +54,11 @@ export default {
     right: 0;
     background-color: #EB5902;
     padding: 16px 56px;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      text-align: center;
+      padding: 16px;
+    }
   }
 }
 </style>
