@@ -50,8 +50,12 @@ export default {
     width: 100%;
   }
   &-body {
+    position: fixed;
+    top: 60px;
+    left: 0;
     opacity: 0;
     pointer-events: none;
+    width: 100%;
     height: calc(100vh - 60px);
     background-color: #eb5902;
     &.is-open {
