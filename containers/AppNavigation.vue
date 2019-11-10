@@ -11,8 +11,13 @@
       </nuxt-link>
     </div>
     <div class="navigation-item">
-      <nuxt-link class="navigation-link" to="/pricing">
-        利用料金
+      <nuxt-link class="navigation-link" to="/service">
+        サービス
+      </nuxt-link>
+    </div>
+    <div class="navigation-item">
+      <nuxt-link class="navigation-link" to="/facility">
+        施設紹介
       </nuxt-link>
     </div>
     <div class="navigation-item">
