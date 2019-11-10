@@ -1,7 +1,7 @@
 <template>
   <div class="root">
     <app-navigation v-if="!isSmartPhone" :color="isTop ? 'white' : 'black'" />
-    <app-navigation-sp v-if="!isSmartPhone" />
+    <app-navigation-sp v-if="isSmartPhone" />
     <div class="pageOuter">
       <nuxt />
     </div>
@@ -24,13 +24,13 @@ export default {
       return this.$route.path === '/'
     },
     isSmartPhone () {
-      return this.$store.getters['app/isSmartPhones']
+      return this.$store.getters['app/isSmartPhone']
     }
   }
 }
 </script>
 
-<style>
+<style lang="scss">
 html {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 16px;
@@ -64,5 +64,11 @@ a {
 img {
   max-width: 100%;
   vertical-align: bottom;
+}
+
+.pageOuter {
+  @media screen and (max-width: 768px) {
+    padding-top: 60px;
+  }
 }
 </style>

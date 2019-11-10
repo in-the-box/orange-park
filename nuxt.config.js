@@ -60,7 +60,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/components.js'
+    { src: '~/plugins/components.js' },
+    { src: '~/plugins/window-size-observer.js', ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules
