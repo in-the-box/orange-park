@@ -67,6 +67,9 @@
     user-select: none;
     pointer-events: none;
     height: 600px;
+    @media screen and (max-width: 768px) {
+      height: 380px;
+    }
     img {
       object-fit: cover;
       height: 100%;
@@ -84,6 +87,9 @@
       font-size: 56px;
       font-weight: bold;
       margin-bottom: 24px;
+      @media screen and (max-width: 768px) {
+        font-size: 18px;
+      }
     }
     &-button {
       display: inline-block;
@@ -94,6 +100,9 @@
       border: solid 4px #fff;
       border-radius: 8px;
       transition: ease-in .2s;
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+      }
       &:hover {
         background-color: #fff;
         color: #EB5902;

@@ -84,11 +84,17 @@
   &-group {
     display: flex;
     margin-bottom: 32px;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
   }
   &-info {
     border-top: solid #eee 2px;
     padding-top: 16px;
     width: 45%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
     &-row {
       display: flex;
       margin-bottom: 16px;
@@ -103,6 +109,10 @@
   &-map {
     width: 50%;
     margin-right: 5%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin-bottom: 26px;
+    }
     &-iframe {
       width: 100%;
     }
@@ -121,6 +131,9 @@
       border: solid 4px #EB5902;
       border-radius: 8px;
       transition: ease-in .2s;
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+      }
       &:hover {
         border: solid 4px #EB5902;
         background-color: #fff;

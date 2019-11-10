@@ -15,5 +15,9 @@ export default {
   background-color: #FFFFFF;
   padding: 40px 80px;
   border-radius: 16px;
+  @media screen and (max-width: 768px) {
+    padding: 40px 16px;
+    border-radius: 0;
+  }
 }
 </style>

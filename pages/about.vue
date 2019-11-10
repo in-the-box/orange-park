@@ -47,6 +47,9 @@
     color: #238B45;
     margin-bottom: 40px;
     line-height: 2;
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+    }
   }
   &-image {
     margin-bottom: 40px;
@@ -55,6 +58,9 @@
     font-size: 20px;
     font-weight: bold;
     line-height: 2;
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
   }
 }
 </style>
