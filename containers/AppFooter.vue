@@ -18,49 +18,47 @@
       </el-container>
     </el-section>
     <footer class="footer">
-      <el-container>
-        <div class="footer-navigation">
-          <div class="footer-navigation-item">
-            <nuxt-link to="/">
-              ホーム
-            </nuxt-link>
-          </div>
-          <div class="footer-navigation-item">
-            <nuxt-link to="/about">
-              オレンジパークとは？
-            </nuxt-link>
-          </div>
-          <div class="footer-navigation-item">
-            <nuxt-link to="/service">
-              サービス
-            </nuxt-link>
-          </div>
-          <div class="footer-navigation-item">
-            <nuxt-link to="/facility">
-              施設紹介
-            </nuxt-link>
-          </div>
-          <div class="footer-navigation-item">
-            <nuxt-link to="/access">
-              アクセス
-            </nuxt-link>
-          </div>
-          <div class="footer-navigation-item">
-            <nuxt-link to="/contact">
-              お問い合わせ
-            </nuxt-link>
-          </div>
+      <div class="footer-navigation">
+        <div class="footer-navigation-item">
+          <nuxt-link to="/">
+            ホーム
+          </nuxt-link>
         </div>
-        <div class="footer-logo">
-          <img src="/footer-logo.svg" alt="パークン">
+        <div class="footer-navigation-item">
+          <nuxt-link to="/about">
+            オレンジパークとは？
+          </nuxt-link>
         </div>
-        <p class="footer-createdBy">
-          Created by <a href="https://pixelgram.jp" target="_blank" rel="noopener noreferrer">PIXELGRAM</a>
-        </p>
-        <p class="footer-copyright">
-          © ORANGE PARK
-        </p>
-      </el-container>
+        <div class="footer-navigation-item">
+          <nuxt-link to="/service">
+            サービス
+          </nuxt-link>
+        </div>
+        <div class="footer-navigation-item">
+          <nuxt-link to="/facility">
+            施設紹介
+          </nuxt-link>
+        </div>
+        <div class="footer-navigation-item">
+          <nuxt-link to="/access">
+            アクセス
+          </nuxt-link>
+        </div>
+        <div class="footer-navigation-item">
+          <nuxt-link to="/contact">
+            お問い合わせ
+          </nuxt-link>
+        </div>
+      </div>
+      <div class="footer-logo">
+        <img src="/footer-logo.svg" alt="パークン">
+      </div>
+      <p class="footer-createdBy">
+        Powerted by <a href="https://pixelgram.jp" target="_blank" rel="noopener noreferrer">PIXELGRAM</a>
+      </p>
+      <p class="footer-copyright">
+        © ORANGE PARK
+      </p>
     </footer>
   </div>
 </template>
@@ -73,7 +71,10 @@
     pointer-events: none;
     height: 600px;
     @media screen and (max-width: 768px) {
-      height: 380px;
+      height: 400px;
+    }
+    @media screen and (max-width: 425px) {
+      height: 240px;
     }
     img {
       object-fit: cover;
@@ -94,6 +95,7 @@
       margin-bottom: 24px;
       @media screen and (max-width: 768px) {
         font-size: 18px;
+        margin-bottom: 16px;
       }
     }
     &-button {
@@ -149,6 +151,11 @@
       @media screen and (max-width: 768px) {
         width: 50%;
         margin-right: 0;
+      }
+      &:nth-child(2n) a {
+        @media screen and (max-width: 768px) {
+          border-right: none;
+        }
       }
       a {
         display: inline-block;

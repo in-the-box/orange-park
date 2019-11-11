@@ -27,7 +27,8 @@ export default {
   margin-top: 40px;
   margin-bottom: 64px;
   @media screen and (max-width: 768px) {
-    margin-bottom: 40px;
+    margin-bottom: 48px;
+    margin-top: 24px;
   }
   h1 {
     font-size: 64px;
@@ -44,6 +45,11 @@ export default {
     font-size: 24px;
     @media screen and (max-width: 768px) {
       font-size: 18px;
+    }
+  }
+  img {
+    @media screen and (max-width: 768px) {
+      width: 240px;
     }
   }
 }

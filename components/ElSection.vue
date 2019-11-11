@@ -20,7 +20,7 @@ export default {
 .section {
   padding: 80px 0;
   @media screen and (max-width: 768px) {
-    padding: 0;
+    padding: 24px 0;
   }
   &.white {
     background-color: #FFFFFF;

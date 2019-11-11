@@ -7,7 +7,9 @@ export const state = () => ({
 
 export const getters = {
   isSmartPhone (state) {
-    return state.windowWidth <= 768
+    if (state.windowWidth) {
+      return state.windowWidth <= 768
+    }
   }
 }
 

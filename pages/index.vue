@@ -44,9 +44,16 @@ export default {
   color: #fff;
   font-weight: bold;
   text-align: center;
+  @media screen and (max-width: 768px) {
+    min-height: 400px;
+    padding-bottom: 36px;
+  }
   img {
     pointer-events: none;
     user-select: none;
+    @media screen and (max-width: 768px) {
+      width: 240px;
+    }
   }
   &-info {
     position: absolute;
@@ -57,7 +64,7 @@ export default {
     @media screen and (max-width: 768px) {
       width: 100%;
       text-align: center;
-      padding: 16px;
+      padding: 8px;
     }
   }
 }

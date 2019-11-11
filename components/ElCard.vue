@@ -17,7 +17,7 @@ export default {
   border-radius: 16px;
   @media screen and (max-width: 768px) {
     padding: 40px 16px;
-    border-radius: 0;
+    border-radius: 8px;
   }
 }
 </style>
