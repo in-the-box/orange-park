@@ -76,6 +76,16 @@
   </div>
 </template>
 
+<script>
+export default {
+  head () {
+    return {
+      title: 'アクセス'
+    }
+  }
+}
+</script>
+
 <style lang="scss" scoped>
 .access {
   &-image {

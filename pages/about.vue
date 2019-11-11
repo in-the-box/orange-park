@@ -26,6 +26,16 @@
   </div>
 </template>
 
+<script>
+export default {
+  head () {
+    return {
+      title: 'オレンジパークとは？'
+    }
+  }
+}
+</script>
+
 <style lang="scss" scoped>
 .about {
   &-heading01 {

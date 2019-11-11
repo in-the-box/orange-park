@@ -3,8 +3,8 @@
     <el-section class="gray">
       <el-container>
         <el-card>
-          <el-page-title sub-title="サービス">
-            SERVICE
+          <el-page-title sub-title="施設紹介">
+            FACILITY
           </el-page-title>
           <div class="access-image">
             <img src="/access.jpg" alt="">
@@ -19,7 +19,7 @@
 export default {
   head () {
     return {
-      title: 'サービス'
+      title: '施設紹介'
     }
   }
 }

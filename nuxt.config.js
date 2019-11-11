@@ -6,11 +6,11 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'ORANGE PARK',
+    titleTemplate: '%s｜ORANGE PARK',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '19年10月、大阪・なんばにコワーキング、ギャラリー、イベントスペースとして利用できる屋内公園として誕生。子供のようにピュアにのびのびと仕事や関心事、やりたいことに取り組めるだけでなく、ここで出会った人たちと繋がり、フェアに語り合い、時には一緒に何かを作り、新たなコンテンツやカルチャーを生み出していく拠点となる、みんなのコミニケーションの場として開放中。' }
+      { hid: 'description', name: 'description', content: '2019年10月、大阪・なんばにコワーキング、ギャラリー、イベントスペースとして利用できる屋内公園として誕生。「みんなの作業場／遊び場」として、子供のようにピュアにのびのびと仕事や関心事、やりたいことに取り組めるだけでなく、ここで出会った人たちと繋がり、フェアに語り合い、時には一緒に何かを作り、新たなコンテンツやカルチャーを生み出していく拠点となる、みんなのコミニケーションの場として開放中。' }
     ],
     link: [
       {
