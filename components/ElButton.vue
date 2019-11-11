@@ -1,5 +1,5 @@
 <template>
-  <button :class="['button', block ? 'is-block' : '']">
+  <button :class="['button', block ? 'is-block' : '']" @click="onClick">
     <slot />
   </button>
 </template>
@@ -11,6 +11,11 @@ export default {
     block: {
       default: false,
       type: Boolean
+    }
+  },
+  methods: {
+    onClick () {
+      this.$emit('click')
     }
   }
 }

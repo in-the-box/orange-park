@@ -65,6 +65,14 @@
                   10:00 ~ 22:00（不定休）
                 </div>
               </div>
+              <div class="access-info-row">
+                <div class="access-info-name">
+                  運営会社
+                </div>
+                <div class="access-info-value">
+                  合同会社ピクセルグラム
+                </div>
+              </div>
             </div>
           </div>
           <div class="access-button">

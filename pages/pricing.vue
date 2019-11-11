@@ -7,7 +7,7 @@
             PRICING
           </el-page-title>
           <div class="access-image">
-            <img src="/access.jpg" alt="">
+            <img src="/pricing.jpg" alt="">
           </div>
         </el-card>
       </el-container>

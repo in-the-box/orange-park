@@ -1,10 +1,33 @@
 <template>
-  <textarea class="textarea" />
+  <textarea
+    :class="['textarea', isError ? 'is-error' : '']"
+    @input="onInput"
+    @keyup.enter="onEnter"
+  />
 </template>
 
 <script>
 export default {
-  name: 'ElTextarea'
+  name: 'ElTextarea',
+  props: {
+    isError: {
+      type: Boolean,
+      default: false
+    },
+    value: {
+      type: String,
+      default: ''
+    }
+  },
+  methods: {
+    onInput (e) {
+      this.str = e.target.value
+      this.$emit('input', e.target.value)
+    },
+    onEnter (e) {
+      this.$emit('enter')
+    }
+  }
 }
 </script>
 
@@ -21,5 +44,8 @@ export default {
   background: #fff;
   height: 200px;
   resize: none;
+  &.is-error {
+    border: 3px solid #ef0d0d;
+  }
 }
 </style>
