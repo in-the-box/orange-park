@@ -1,7 +1,7 @@
 <template>
   <div class="root">
-    <app-navigation v-if="!isSmartPhone" :color="isTop ? 'white' : 'black'" />
-    <app-navigation-sp v-if="isSmartPhone" />
+    <app-navigation :color="isTop ? 'white' : 'black'" />
+    <app-navigation-sp />
     <div class="pageOuter">
       <nuxt />
     </div>

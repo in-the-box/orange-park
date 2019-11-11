@@ -69,6 +69,7 @@
 
 <script>
 export default {
+  name: 'AppNavigation',
   props: {
     color: {
       default: 'white',
@@ -85,6 +86,12 @@ export default {
   display: flex;
   top: 24px;
   left: 40px;
+  &-outer {
+    display: block;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
   &-logo {
     margin-right: 24px;
     margin-top: -8px;

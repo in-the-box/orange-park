@@ -94,6 +94,7 @@
 <script>
 import { mapActions, mapState } from 'vuex'
 export default {
+  name: 'AppNavigationSp',
   computed: {
     ...mapState('app', [
       'isOpenMenu'
@@ -110,11 +111,15 @@ export default {
 <style lang="scss" scoped>
 .navigation {
   &-outer {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
     width: 100%;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
   }
   &-body {
     position: fixed;
