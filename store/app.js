@@ -28,5 +28,8 @@ export const mutations = {
 export const actions = {
   toggleMenu ({ state, commit }) {
     commit('setIsOpenMenu', !state.isOpenMenu)
+  },
+  closeMenu ({ state, commit }) {
+    commit('setIsOpenMenu', false)
   }
 }

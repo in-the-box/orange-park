@@ -2,7 +2,7 @@
   <div class="navigation-outer">
     <div class="navigation">
       <div class="navigation-header">
-        <div class="navigation-header-logo">
+        <div class="navigation-header-logo" @click="closeMenu">
           <nuxt-link to="/">
             <img src="/header-logotext.svg" alt="ORANGE PARK">
           </nuxt-link>
@@ -17,37 +17,37 @@
       </div>
       <div :class="['navigation-body', isOpenMenu ? 'is-open' : '']">
         <div class="navigation-body-inner">
-          <div class="navigation-body-item" @click="toggleMenu">
+          <div class="navigation-body-item" @click="closeMenu">
             <nuxt-link class="navigation-body-link" to="/">
               <span class="title">HOME</span>
               <span>ホーム</span>
             </nuxt-link>
           </div>
-          <div class="navigation-body-item" @click="toggleMenu">
+          <div class="navigation-body-item" @click="closeMenu">
             <nuxt-link class="navigation-body-link" to="/about">
               <span class="title">ABOUT</span>
               <span>オレンジパークとは？</span>
             </nuxt-link>
           </div>
-          <div class="navigation-body-item" @click="toggleMenu">
-            <nuxt-link class="navigation-body-link" to="/service">
-              <span class="title">SERVICE</span>
-              <span>サービス</span>
-            </nuxt-link>
-          </div>
-          <div class="navigation-body-item" @click="toggleMenu">
+          <div class="navigation-body-item" @click="closeMenu">
             <nuxt-link class="navigation-body-link" to="/facility">
-              <span class="title">FACILLTY</span>
+              <span class="title">FACILITY</span>
               <span>施設紹介</span>
             </nuxt-link>
           </div>
-          <div class="navigation-body-item" @click="toggleMenu">
+          <div class="navigation-body-item" @click="closeMenu">
+            <nuxt-link class="navigation-body-link" to="/pricing">
+              <span class="title">PRICING</span>
+              <span>利用料金</span>
+            </nuxt-link>
+          </div>
+          <div class="navigation-body-item" @click="closeMenu">
             <nuxt-link class="navigation-body-link" to="/access">
               <span class="title">ACCESS</span>
               <span>アクセス</span>
             </nuxt-link>
           </div>
-          <div class="navigation-body-item" @click="toggleMenu">
+          <div class="navigation-body-item" @click="closeMenu">
             <nuxt-link class="navigation-body-link" to="/contact">
               <span class="title">CONTACT</span>
               <span>お問い合わせ</span>
@@ -102,7 +102,8 @@ export default {
   },
   methods: {
     ...mapActions('app', [
-      'toggleMenu'
+      'toggleMenu',
+      'closeMenu'
     ])
   }
 }

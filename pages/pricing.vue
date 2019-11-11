@@ -3,8 +3,8 @@
     <el-section class="gray">
       <el-container>
         <el-card>
-          <el-page-title sub-title="サービス">
-            SERVICE
+          <el-page-title sub-title="利用料金">
+            PRICING
           </el-page-title>
           <div class="access-image">
             <img src="/access.jpg" alt="">

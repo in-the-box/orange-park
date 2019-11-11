@@ -30,13 +30,13 @@
           </nuxt-link>
         </div>
         <div class="footer-navigation-item">
-          <nuxt-link to="/service">
-            サービス
+          <nuxt-link to="/facility">
+            施設紹介
           </nuxt-link>
         </div>
         <div class="footer-navigation-item">
-          <nuxt-link to="/facility">
-            施設紹介
+          <nuxt-link to="/pricing">
+            利用料金
           </nuxt-link>
         </div>
         <div class="footer-navigation-item">
