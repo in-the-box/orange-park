@@ -7,7 +7,7 @@
             FACILITY
           </el-page-title>
           <div class="access-image">
-            <img src="/access.jpg" alt="">
+            <img src="/facility.png" alt="">
           </div>
         </el-card>
       </el-container>
