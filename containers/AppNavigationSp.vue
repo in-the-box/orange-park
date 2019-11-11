@@ -17,7 +17,42 @@
       </div>
       <div :class="['navigation-body', isOpenMenu ? 'is-open' : '']">
         <div class="navigation-body-inner">
-          menu
+          <div class="navigation-body-item" @click="toggleMenu">
+            <nuxt-link class="navigation-body-link" to="/">
+              <span class="title">HOME</span>
+              <span>ホーム</span>
+            </nuxt-link>
+          </div>
+          <div class="navigation-body-item" @click="toggleMenu">
+            <nuxt-link class="navigation-body-link" to="/about">
+              <span class="title">ABOUT</span>
+              <span>オレンジパークとは？</span>
+            </nuxt-link>
+          </div>
+          <div class="navigation-body-item" @click="toggleMenu">
+            <nuxt-link class="navigation-body-link" to="/service">
+              <span class="title">SERVICE</span>
+              <span>サービス</span>
+            </nuxt-link>
+          </div>
+          <div class="navigation-body-item" @click="toggleMenu">
+            <nuxt-link class="navigation-body-link" to="/facility">
+              <span class="title">FACILLTY</span>
+              <span>施設紹介</span>
+            </nuxt-link>
+          </div>
+          <div class="navigation-body-item" @click="toggleMenu">
+            <nuxt-link class="navigation-body-link" to="/access">
+              <span class="title">ACCESS</span>
+              <span>アクセス</span>
+            </nuxt-link>
+          </div>
+          <div class="navigation-body-item" @click="toggleMenu">
+            <nuxt-link class="navigation-body-link" to="/contact">
+              <span class="title">CONTACT</span>
+              <span>お問い合わせ</span>
+            </nuxt-link>
+          </div>
         </div>
       </div>
     </div>
@@ -57,10 +92,27 @@ export default {
     pointer-events: none;
     width: 100%;
     height: calc(100vh - 60px);
-    background-color: #eb5902;
+    background-color: rgba(235, 89, 2, 0.95);
     &.is-open {
       opacity: 1;
       pointer-events: initial;
+    }
+    &-inner {
+      padding: 32px 24px;
+    }
+    &-link {
+      display: block;
+    }
+    &-item {
+      color: #fff;
+      font-weight: bold;
+      .title {
+        display: block;
+        font-size: 24px;
+      }
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
     }
   }
   &-header {
@@ -72,6 +124,7 @@ export default {
     text-align: center;
     background-color: #fff;
     box-shadow: 0 0 5px 1px rgba(0,0,0,.1);
+    z-index: 2;
     &-logo {
       line-height: 0;
     }
