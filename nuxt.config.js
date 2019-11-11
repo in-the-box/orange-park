@@ -63,6 +63,13 @@ export default {
     { src: '~/plugins/components.js' },
     { src: '~/plugins/window-size-observer.js', ssr: false }
   ],
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://orangepark.pixelgram.jp',
+    gzip: true,
+    cacheTime: 1000 * 60 * 15,
+    generate: true
+  },
   /*
   ** Nuxt.js dev-modules
   */
